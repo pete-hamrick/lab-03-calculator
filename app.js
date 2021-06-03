@@ -15,6 +15,13 @@ const subtractYInput = document.getElementById('subtract-y-input');
 const subtractButton = document.getElementById('subtract-button');
 const subtractResult = document.getElementById('subtract-result');
 
+// Multiplication DOM elements
+const multiplyXInput = document.getElementById('multiply-x-input');
+const multiplyYInput = document.getElementById('multiply-y-input');
+const multiplyButton = document.getElementById('multiply-button');
+const multiplyResult = document.getElementById('multiply-result');
+
+
 // set event listeners 
 addButton.addEventListener('click', () => {
   // do any needed work with the value(s)
@@ -33,5 +40,8 @@ subtractButton.addEventListener('click', () => {
 
     subtractResult.textContent = answer;
 
+});
+
+multiplyButton.addEventListener('click', () => {
 });
   // get user input(s)
