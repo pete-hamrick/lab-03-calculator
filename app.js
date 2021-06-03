@@ -3,10 +3,18 @@ import { add } from './calculations.js';
 
 
 // reference needed DOM elements
+// Addition DOM elements
 const addXInput = document.getElementById('add-x-input');
 const addYInput = document.getElementById('add-y-input');
 const addButton = document.getElementById('add-button');
 const addResult = document.getElementById('add-result');
+
+// Subtraction DOM elements
+const subtractXInput = document.getElementById('subtract-x-input');
+const subtractYInput = document.getElementById('subtract-y-input');
+const subtractButton = document.getElementById('subtract-button');
+const subtractResult = document.getElementById('subtract-result');
+
 
 // set event listeners 
 addButton.addEventListener('click', () => {
@@ -18,4 +26,7 @@ addButton.addEventListener('click', () => {
     // update DOM to reflect new value(s)
     addResult.textContent = sum;
 });
+
+subtractButton.addEventListener('click', () => {
+})
   // get user input(s)
