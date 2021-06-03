@@ -1,5 +1,5 @@
 // import functions
-import { add } from './calculations.js';
+import { add, subtract } from './calculations.js';
 
 
 // reference needed DOM elements
@@ -15,7 +15,6 @@ const subtractYInput = document.getElementById('subtract-y-input');
 const subtractButton = document.getElementById('subtract-button');
 const subtractResult = document.getElementById('subtract-result');
 
-
 // set event listeners 
 addButton.addEventListener('click', () => {
   // do any needed work with the value(s)
@@ -28,5 +27,11 @@ addButton.addEventListener('click', () => {
 });
 
 subtractButton.addEventListener('click', () => {
-})
+    const x = Number(subtractXInput.value);
+    const y = Number(subtractYInput.value);
+    const answer = subtract(x, y);
+
+    subtractResult.textContent = answer;
+
+});
   // get user input(s)
