@@ -1,6 +1,5 @@
 // import functions
-import { add, subtract } from './calculations.js';
-
+import { add, subtract, multiply } from './calculations.js';
 
 // reference needed DOM elements
 // Addition DOM elements
@@ -43,5 +42,10 @@ subtractButton.addEventListener('click', () => {
 });
 
 multiplyButton.addEventListener('click', () => {
+    const x = Number(multiplyXInput.value);
+    const y = Number(multiplyYInput.value);
+    const answer = multiply(x, y);
+
+    multiplyResult.textContent = answer;
 });
   // get user input(s)
