@@ -20,6 +20,11 @@ const multiplyYInput = document.getElementById('multiply-y-input');
 const multiplyButton = document.getElementById('multiply-button');
 const multiplyResult = document.getElementById('multiply-result');
 
+// Division DOM elements
+const divideXInput = document.getElementById('divide-x-input');
+const divideYInput = document.getElementById('divide-y-input');
+const divideButton = document.getElementById('divide-button');
+const divideResult = document.getElementById('divide-result');
 
 // set event listeners 
 addButton.addEventListener('click', () => {
@@ -48,4 +53,11 @@ multiplyButton.addEventListener('click', () => {
 
     multiplyResult.textContent = answer;
 });
-  // get user input(s)
+
+divideButton.addEventListener('click', () => {
+    console.log('divide button clicked');
+    
+});
+
+// get user input(s)
+
