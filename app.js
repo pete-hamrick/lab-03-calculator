@@ -55,7 +55,11 @@ multiplyButton.addEventListener('click', () => {
 });
 
 divideButton.addEventListener('click', () => {
-    
+    const x = Number(divideXInput.value);
+    const y = Number(divideYInput.value);
+    const answer = divide(x, y);
+
+    divideResult.textContent = answer;    
 });
 
 // get user input(s)
