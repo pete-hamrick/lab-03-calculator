@@ -1,5 +1,5 @@
 // import functions
-import { add, subtract, multiply } from './calculations.js';
+import { add, subtract, multiply, divide } from './calculations.js';
 
 // reference needed DOM elements
 // Addition DOM elements
@@ -55,7 +55,6 @@ multiplyButton.addEventListener('click', () => {
 });
 
 divideButton.addEventListener('click', () => {
-    console.log('divide button clicked');
     
 });
 
